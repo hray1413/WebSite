@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="UTF-8">
+  <title>宗教资料表单</title>
+  <style>
+    body {
+      font-family: "Noto Sans TC", sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 2em;
+    }
+    .container {
+      max-width: 800px;
+      margin: auto;
+      background-color: #fff;
+      padding: 2em;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 1em;
+    }
+    label {
+      display: block;
+      margin-top: 1em;
+      font-weight: bold;
+    }
+    input, select {
+      width: 100%;
+      padding: 0.5em;
+      margin-top: 0.3em;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .button-row {
+      margin-top: 2em;
+      display: flex;
+      justify-content: space-between;
+    }
+    button {
+      padding: 0.7em 1.5em;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 1em;
+      cursor: pointer;
+    }
+    .tabs {
+      display: flex;
+      gap: 1em;
+      margin-bottom: 1em;
+    }
+    .tab {
+      padding: 0.5em 1em;
+      background-color: #ddd;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .tab.active {
+      background-color: #4CAF50;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="tabs">
+      <div class="tab">基本资料</div>
+      <div class="tab">家长资料</div>
+      <div class="tab">住址</div>
+      <div class="tab active">宗教</div>
+    </div>
+
+    <h2>🛐 新生宗教资料</h2>
+
+    <label for="religion">宗教信仰</label>
+    <select id="religion">
+      <option>佛教</option>
+      <option>基督教</option>
+      <option>伊斯兰教</option>
+      <option>道教</option>
+      <option>印度教</option>
+      <option>无宗教</option>
+      <option>其他</option>
+    </select>
+
+    <label for="notes">备注</label>
+    <input type="text" id="notes">
+
+    <div class="button-row">
+      <button onclick="window.location.href='address.html'">← 上一页</button>
+      <button onclick="alert('🎉 儀式完成！Goblin 新生已成功登錄！')">完成 →</button>
+    </div>
+  </div>
+</body>
+</html>

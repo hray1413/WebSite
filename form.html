@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="UTF-8">
+  <title>新生基本资料表单</title>
+  <style>
+    body {
+      font-family: "Noto Sans TC", sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 2em;
+    }
+    .container {
+      max-width: 800px;
+      margin: auto;
+      background-color: #fff;
+      padding: 2em;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 1em;
+    }
+    label {
+      display: block;
+      margin-top: 1em;
+      font-weight: bold;
+    }
+    input, select {
+      width: 100%;
+      padding: 0.5em;
+      margin-top: 0.3em;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .button-row {
+      margin-top: 2em;
+      text-align: right;
+    }
+    button {
+      padding: 0.7em 1.5em;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 1em;
+      cursor: pointer;
+    }
+    .tabs {
+      display: flex;
+      gap: 1em;
+      margin-bottom: 1em;
+    }
+    .tab {
+      padding: 0.5em 1em;
+      background-color: #ddd;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .tab.active {
+      background-color: #4CAF50;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="tabs">
+      <div class="tab active">基本资料</div>
+      <div class="tab">家长资料</div>
+      <div class="tab">住址</div>
+      <div class="tab">宗教</div>
+    </div>
+
+    <h2>🧙 新生基本资料</h2>
+
+    <label for="name-cn">新生中文名</label>
+    <input type="text" id="name-cn" value="张梅莲">
+
+    <label for="name-en">新生英文名</label>
+    <input type="text" id="name-en" value="Cheong Moey Lian">
+
+    <label for="id-number">身份证号码</label>
+    <input type="text" id="id-number" value="130606-14-0312">
+
+    <label for="gender">性别</label>
+    <select id="gender">
+      <option selected>女</option>
+      <option>男</option>
+    </select>
+
+    <label for="year">年份</label>
+    <input type="text" id="year" value="2025">
+
+    <label for="nationality">国籍</label>
+    <input type="text" id="nationality" value="MALAYSIA">
+
+    <label for="dob">出生日期</label>
+    <input type="date" id="dob" value="2013-06-06">
+
+    <label for="birthplace">出生地点</label>
+    <input type="text" id="birthplace" value="Kuala Lumpur">
+
+    <label for="hospital">出生医院</label>
+    <input type="text" id="hospital">
+
+    <label for="phone">联络号码</label>
+    <input type="text" id="phone" value="0122758454">
+
+    <label for="email">E-Mail</label>
+    <input type="email" id="email" value="support@thesmp.top">
+
+    <label for="entry-year">入学年份</label>
+    <input type="text" id="entry-year">
+
+    <label for="primary-school">小学</label>
+    <select id="primary-school">
+      <option>期望 - 直接拨</option>
+      <option>服从安排</option>
+    </select>
+
+    <div class="button-row">
+      <button onclick="window.location.href='parent.html'">下一步 →</button>
+    </div>
+  </div>
+</body>
+</html>
+

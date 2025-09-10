@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="UTF-8">
+  <title>Goblin 新生登入</title>
+  <style>
+     body {
+      font-family: "Noto Sans TC", sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 2em;
+    }
+    .container {
+      max-width: 800px;
+      margin: auto;
+      background-color: #fff;
+      padding: 2em;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 1em;
+    }
+    label {
+      display: block;
+      margin-top: 1em;
+      font-weight: bold;
+    }
+    input, select {
+      width: 100%;
+      padding: 0.5em;
+      margin-top: 0.3em;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .button-row {
+      margin-top: 2em;
+      text-align: right;
+    }
+    button {
+      padding: 0.7em 1.5em;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 1em;
+      cursor: pointer;
+    }
+    .tabs {
+      display: flex;
+      gap: 1em;
+      margin-bottom: 1em;
+    }
+    .tab {
+      padding: 0.5em 1em;
+      background-color: #ddd;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .tab.active {
+      background-color: #4CAF50;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>🔐 Goblin 新生登入入口</h2>
+
+    <label for="email">E-Mail / 帳號</label>
+    <input type="text" id="email">
+
+    <label for="password">密碼</label>
+    <input type="password" id="password">
+
+    <div class="button-row">
+      <button onclick="alert('🧙 登入成功，儀式啟動！')">登入</button>
+    </div>
+
+    <div style="margin-top: 1em; text-align: center;">
+      <a href="forgot.html">🧪 忘記密碼</a> | <a href="register.html">🧝 註冊成為新生</a>
+    </div>
+  </div>
+</body>
+</html>

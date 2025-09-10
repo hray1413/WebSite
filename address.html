@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="UTF-8">
+  <title>住址资料表单</title>
+  <style>
+   body {
+      font-family: "Noto Sans TC", sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 2em;
+    }
+    .container {
+      max-width: 800px;
+      margin: auto;
+      background-color: #fff;
+      padding: 2em;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 1em;
+    }
+    label {
+      display: block;
+      margin-top: 1em;
+      font-weight: bold;
+    }
+    input, select {
+      width: 100%;
+      padding: 0.5em;
+      margin-top: 0.3em;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .button-row {
+      margin-top: 2em;
+      display: flex;
+      justify-content: space-between;
+    }
+    button {
+      padding: 0.7em 1.5em;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 1em;
+      cursor: pointer;
+    }
+    .tabs {
+      display: flex;
+      gap: 1em;
+      margin-bottom: 1em;
+    }
+    .tab {
+      padding: 0.5em 1em;
+      background-color: #ddd;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .tab.active {
+      background-color: #4CAF50;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="tabs">
+      <div class="tab">基本资料</div>
+      <div class="tab">家长资料</div>
+      <div class="tab active">住址</div>
+      <div class="tab">宗教</div>
+    </div>
+
+    <h2>🏡 新生住址资料</h2>
+
+    <label for="address">住址</label>
+    <input type="text" id="address">
+
+    <label for="postcode">邮政编码</label>
+    <input type="text" id="postcode">
+
+    <label for="city">城市</label>
+    <input type="text" id="city">
+
+    <label for="state">州属</label>
+    <input type="text" id="state">
+
+    <label for="country">国家</label>
+    <input type="text" id="country" value="MALAYSIA">
+
+    <div class="button-row">
+      <button onclick="window.location.href='parent.html'">← 上一页</button>
+      <button onclick="window.location.href='religion.html'">下一步 →</button>
+    </div>
+  </div>
+</body>
+</html>
